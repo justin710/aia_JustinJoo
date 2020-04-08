@@ -1,2 +1,2 @@
-# git-workshop
-git 사용 실습
+# java_project
+ 연습용
