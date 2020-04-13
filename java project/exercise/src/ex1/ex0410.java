@@ -12,15 +12,12 @@ public class ex0410 {
 
 		if ((a > b) && (b > c)) {
 
-			System.out.println(b);
 			System.out.println(true);
-
 		}
 
 		else {
 
 			System.out.println(false);
-
 		}
 	}
 }
