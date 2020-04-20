@@ -28,7 +28,7 @@ public class Ex1 {
 
 		  
 
-		  if(ch1_1!=' ' && ch1_1!='\t') {
+		  if(ch1_1!=' ' || ch1_1!='\t') {
 
 			  result = true;
 
@@ -98,7 +98,7 @@ public class Ex1 {
 
 		  
 
-		  if(powerOn=false) {
+		  if (powerOn=false) {
 
 			  result = true;
 
