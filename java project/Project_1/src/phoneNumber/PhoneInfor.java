@@ -1,4 +1,4 @@
-package version_1;
+package phoneNumber;
 
 public class PhoneInfor {
 
@@ -41,11 +41,11 @@ public class PhoneInfor {
 
 // data1
 
-		PhoneInfor data1 = new PhoneInfor("철수", "000", "0420");
+		PhoneInfor data1 = new PhoneInfor("손흥민", "01066667777", "0712");
 
 // data2
 
-		PhoneInfor data2 = new PhoneInfor("영희", "000");
+		PhoneInfor data2 = new PhoneInfor("박지성", "01088889999");
 
 // data3
 
