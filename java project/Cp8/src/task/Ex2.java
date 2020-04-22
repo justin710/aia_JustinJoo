@@ -17,13 +17,8 @@ public class Ex2 {
 	 * 함께 정의해야 한다.
 	 */
 	
-	public static void addOneDArr(int[][] arr, int add){
+static void addOneDArr(int[][] arr, int add){
 		
-		
-		
-		System.out.println("2차원 배열의 사이즈 : " + arr.length);
-		System.out.println("arr[0] 1차원 배열의 사이즈 : " + arr[0].length);
-		System.out.println("arr[1] 1차원 배열의 사이즈 : " + arr[1].length);
 		
 		 for (int i=0; i<arr.length; i++) {
 			 
@@ -33,37 +28,5 @@ public class Ex2 {
 				 }
 		 }
 	}
-
-	 public static void main(String[] args) {
-						{
-				
-
-int[][] arr2=new int[2][2];
-
-
-
-arr2[0][0]=sc.nextInt();
-
-arr2[0][1]=sc.nextInt();
-
-arr2[1][0]=sc.nextInt();
-
-arr2[1][1]=sc.nextInt();
-
-
-
-addOneDArr(arr2, 3);
-
-
-
-// 동작 확인출력
-
-for(int i=0; i<2; i++) {
-
- for(int j=0; j<2; j++) {
-
-  System.out.println(arr2[i][j]);
- 
- }
 
 }

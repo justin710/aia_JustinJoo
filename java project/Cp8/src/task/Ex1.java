@@ -32,18 +32,20 @@ public class Ex1 {
 	
 		Scanner sc= new Scanner(System.in);
 		
-		int[] arr = new int[3];
+		int[] arr = new int[5];
+		
+		System.out.println("비교하고 싶은 숫자 5개를 입력하세요");
 		
 		for(int i=0; i<arr.length; i++) {
 		
-			System.out.println("비교하고 싶은 숫자를 입력하세요");
+			
 			arr[i]=sc.nextInt();
 		
 		
 		
 		}
-		System.out.println("입력한 수 중 제일 큰 수"+mimNum(arr));
-		System.out.println("입력한 수 중 제일 작은 수"+maxNum(arr));
+		System.out.println("입력한 수 중 제일 큰 수 "+mimNum(arr));
+		System.out.println("입력한 수 중 제일 작은 수 "+maxNum(arr));
 	}
 	
 }
