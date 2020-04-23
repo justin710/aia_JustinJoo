@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="ex.Member"/>
 <fullyQualifiedTypeName name="ex.Singleton"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="ver02.PhoneInfor"/>
 </qualifiedTypeNameHistroy>
