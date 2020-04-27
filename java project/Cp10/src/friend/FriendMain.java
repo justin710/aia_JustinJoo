@@ -34,7 +34,7 @@ public class FriendMain {
 				break;
 			case 5:
 				System.out.println("프로그램을 종료합니다.");
-				handler.kb.nextLine(); // 앞의 버퍼 클리어
+			
 				
 				return;
 				
