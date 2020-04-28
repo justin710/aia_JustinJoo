@@ -4,7 +4,7 @@ package friend;
 //상속을 목적으로 기본 클래스 생성
 //기본 속성과 기능을 구성
 
-public abstract class Friend {
+public abstract class Friend implements Info {
 
 	String name;  		//친구의 이름
 	String phoneNum; 	//친구의 전화번호
@@ -28,7 +28,7 @@ public abstract class Friend {
 //	public void showData() {
 	
 	//추상 메서드 생성
-	abstract void showData();
+	//abstract void showData();
 	
 
 	}

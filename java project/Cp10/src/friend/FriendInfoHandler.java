@@ -8,14 +8,20 @@ public class FriendInfoHandler {
 	// 친구 정보를 저장하는 기능
 	// 친구정보의 기본 정보 출력 기능
 	// 친구정보 상세 정보 출력 기능
+	
+	private static FriendInfoHandler handler = new FriendInfoHandler(100);
 
+	public static FriendInfoHandler getInstance() {
+		return handler;
+	}
+	
 	private Friend[] myFriends; // Friend 타입의 배열 선언 (생성아님 선언만 한거임)
 	private int numOfFriends; // 저장된 친구의 정보 개수 (저장할 배열의 인덱스 반복할 횟수)
 
 	Scanner kb; // Scanner sc=new Scanner(System.in);
 
 	// 생성자 초기화!! 저장공간(사이즈) 크기를 받아서 배열을 생성
-	FriendInfoHandler(int num) {
+	private FriendInfoHandler(int num) {
 		myFriends = new Friend[num];
 		numOfFriends = 0;
 	

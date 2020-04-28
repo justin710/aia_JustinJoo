@@ -21,11 +21,12 @@
 <fullyQualifiedTypeName name="ver01.PhoneInfor"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.beans.DefaultPersistenceDelegate"/>
 <fullyQualifiedTypeName name="ver04.PhoneBookManager"/>
 <fullyQualifiedTypeName name="ver04.PhoneCompaanyInfor"/>
 <fullyQualifiedTypeName name="ver04.PhoneCafeInfor"/>
 <fullyQualifiedTypeName name="ver04.PhoneUnivInfo"/>
 <fullyQualifiedTypeName name="ver04.PhoneInfor"/>
+<fullyQualifiedTypeName name="ver04.Menu"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

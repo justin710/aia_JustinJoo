@@ -1,4 +1,4 @@
-package ver04;
+package ver05;
 
 import java.util.Scanner;
 
@@ -6,15 +6,21 @@ import java.util.Scanner;
 // 저장, 수정, 삭제, 검색, 출력
 public class PhoneBookManager {
 
+	private static PhoneBookManager manager = new PhoneBookManager(100);
+	public static PhoneBookManager getManager() {
+		return manager;
+	}
+	
 	// 1. 배열 선언
 	PhoneInfo[] books;
 	// 배열에 저장된 요소의 개수
 	int numOfInfo;
 
 	Scanner kb;
-
+	
+	
 	// 생성자를 통해서 배열 생성, 요소의 개수 초기화
-	PhoneBookManager(int num) {
+	private PhoneBookManager(int num) {
 		// 배열의 생성
 		books = new PhoneInfo[num];
 		// 요소 개수의 초기화
