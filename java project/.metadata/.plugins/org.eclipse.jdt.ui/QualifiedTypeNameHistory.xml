@@ -29,4 +29,6 @@
 <fullyQualifiedTypeName name="ver04.PhoneInfor"/>
 <fullyQualifiedTypeName name="ver04.Menu"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="friend.FriendInfoHandler"/>
+<fullyQualifiedTypeName name="friend.Menu"/>
 </qualifiedTypeNameHistroy>

@@ -6,21 +6,15 @@ import java.util.Scanner;
 // 저장, 수정, 삭제, 검색, 출력
 public class PhoneBookManager {
 
-	private static PhoneBookManager manager = new PhoneBookManager(100);
-	public static PhoneBookManager getManager() {
-		return manager;
-	}
-	
 	// 1. 배열 선언
 	PhoneInfo[] books;
 	// 배열에 저장된 요소의 개수
 	int numOfInfo;
 
 	Scanner kb;
-	
-	
+
 	// 생성자를 통해서 배열 생성, 요소의 개수 초기화
-	private PhoneBookManager(int num) {
+	PhoneBookManager(int num) {
 		// 배열의 생성
 		books = new PhoneInfo[num];
 		// 요소 개수의 초기화
@@ -44,7 +38,8 @@ public class PhoneBookManager {
 	// 2.2 사용자로 부터 받은 데이터로 인스턴스 생성
 	void createInfo() {
 
-		System.out.println(" 1.일반 2.대학 3.회사 4.동호회 ");
+		// System.out.println(" 1.일반 2.대학 3.회사 4.동호회 ");
+		System.out.println(" 1.대학 2.회사 3.동호회 ");
 
 		System.out.println("입력하고자 하는 번호를 입력해주세요.");
 
@@ -75,11 +70,11 @@ public class PhoneBookManager {
 		PhoneInfo info = null;
 
 		switch (select) {
-		case 1:
-			// 2.2.2 기본 클래스로 인스턴스 생성
-			info = new PhoneInfo(name, phoneNumber, addr, email);
-			break;
-		case 2:
+//		case 1:
+//			// 2.2.2 기본 클래스로 인스턴스 생성
+//			info = new PhoneInfo(name, phoneNumber, addr, email);
+//			break;
+		case MenuNum.UNIV:
 			System.out.println("전공(학과)를 입력해주세요.");
 			String major = kb.nextLine();
 			System.out.println("학년 정보를 입력해주세요.");
@@ -88,7 +83,7 @@ public class PhoneBookManager {
 			// 2.2.3 대학 클래스로 인스턴스 생성
 			info = new PhoneUnivInfo(name, phoneNumber, addr, email, major, grade);
 			break;
-		case 3:
+		case MenuNum.COMPANY:
 			System.out.println("회사의 이름을 입력해주세요.");
 			String company = kb.nextLine();
 			System.out.println("부서의 이름을 입력해주세요.");
@@ -99,7 +94,7 @@ public class PhoneBookManager {
 			// 2.2.4 회사 클래스로 인스턴스 생성
 			info = new PhoneCompanyInfo(name, phoneNumber, addr, email, company, dept, job);
 			break;
-		case 4:
+		case MenuNum.CAFE:
 			System.out.println("동호회 이름을 입력해주세요.");
 			String cafeName = kb.nextLine();
 			System.out.println("닉네임을 입력해주세요.");
@@ -242,9 +237,10 @@ public class PhoneBookManager {
 
 				info = new PhoneCafeInfo(editName, phoneNumber, addr, email, cafeName, nickName);
 
-			} else if (books[index] instanceof PhoneInfo) {
-				info = new PhoneInfo(editName, phoneNumber, addr, email);
 			}
+//			else if(books[index] instanceof PhoneInfo) {
+//				info = new PhoneInfo(editName, phoneNumber, addr, email);
+//			}
 
 			// 배열에 새로운 인스턴스를 저장
 			books[index] = info;
